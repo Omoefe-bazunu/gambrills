@@ -1,0 +1,33 @@
+import { Unbounded, Manrope } from "next/font/google";
+import Header from "@/src/components/common/Header";
+import "./globals.css";
+
+const unbounded = Unbounded({
+  subsets: ["latin"],
+  variable: "--font-unbounded",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
+
+export const metadata = {
+  title: "Gambrills Partners",
+  description: "Gambrills Partners - A global consulting firm.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body
+        className={`${unbounded.variable} ${manrope.variable} font-primary`}
+      >
+        <div className="min-h-screen">
+          <Header />
+          <main>{children}</main>
+        </div>
+      </body>
+    </html>
+  );
+}
