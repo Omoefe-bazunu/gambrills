@@ -53,6 +53,9 @@ const Header = () => {
             Blog
           </a>
           <a href="#" className="hover:text-orange-500">
+            Careers
+          </a>
+          <a href="#" className="hover:text-orange-500">
             Contact
           </a>
         </nav>
@@ -90,6 +93,9 @@ const Header = () => {
               </a>
               <a href="#" className="hover:text-orange-500 py-2">
                 Blog
+              </a>
+              <a href="#" className="hover:text-orange-500 py-2">
+                Careers
               </a>
               <a href="#" className="hover:text-orange-500 py-2">
                 Contact
