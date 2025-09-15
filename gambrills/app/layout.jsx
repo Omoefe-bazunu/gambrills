@@ -1,7 +1,7 @@
 import { Unbounded, Manrope } from "next/font/google";
 import Header from "@/src/components/common/Header";
-import "./globals.css";
 import Footer from "@/src/components/common/Footer";
+import "./globals.css";
 
 const unbounded = Unbounded({
   subsets: ["latin"],
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${unbounded.variable} ${manrope.variable} font-primary`}
       >
-        <div className="min-h-screen">
+        <div className="flex flex-col min-h-screen">
           <Header />
           <main>{children}</main>
           <Footer />

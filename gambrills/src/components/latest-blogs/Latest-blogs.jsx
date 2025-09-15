@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 
 export default function LatestBlogUpdates() {
@@ -59,6 +60,12 @@ export default function LatestBlogUpdates() {
                 <h3 className="text-lg lg:text-2xl max-w-xl lg:max-w-none font-semibold mt-2">
                   {blogs[0].title}
                 </h3>
+                <Link
+                  href={`/blog/${blogs[0].id}`}
+                  className="bg-orange-500 my-4 flex text-lg w-fit gap-2 items-center rounded-full text-white px-4 py-2 hover:bg-[#00042f] transition-colors"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
@@ -79,6 +86,12 @@ export default function LatestBlogUpdates() {
                   {blogs[1].author} • {blogs[1].comments} Comment
                 </p>
                 <h3 className="text-lg font-semibold mt-2">{blogs[1].title}</h3>
+                <Link
+                  href={`/blog/${blogs[1].id}`}
+                  className="bg-orange-500 my-4 flex text-lg w-fit mt-4 gap-2 items-center rounded-full text-white px-4 py-2 hover:bg-[#00042f] transition-colors"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
@@ -96,6 +109,12 @@ export default function LatestBlogUpdates() {
                   {blogs[2].author} • {blogs[2].comments} Comment
                 </p>
                 <h3 className="text-lg font-semibold mt-2">{blogs[2].title}</h3>
+                <Link
+                  href={`/blog/${blogs[2].id}`}
+                  className="bg-orange-500 my-4 flex text-lg w-fit mt-4 gap-2 items-center rounded-full text-white px-4 py-2 hover:bg-[#00042f] transition-colors"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>

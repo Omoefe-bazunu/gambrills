@@ -40,22 +40,22 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-4">
-          <a href="#" className="hover:text-orange-500">
+          <a href="/" className="hover:text-orange-500">
             Home
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/about" className="hover:text-orange-500">
             About Us
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/services" className="hover:text-orange-500">
             Services
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/blog" className="hover:text-orange-500">
             Blog
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/careers" className="hover:text-orange-500">
             Careers
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/contact" className="hover:text-orange-500">
             Contact
           </a>
         </nav>
@@ -82,22 +82,22 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-slate-50 shadow-lg rounded-b-xl mx-4 sm:mx-6 lg:mx-8 md:hidden">
             <nav className="flex flex-col space-y-4 p-4">
-              <a href="#" className="hover:text-orange-500 py-2">
+              <a href="/" className="hover:text-orange-500 py-2">
                 Home
               </a>
-              <a href="#" className="hover:text-orange-500 py-2">
+              <a href="/about" className="hover:text-orange-500 py-2">
                 About Us
               </a>
-              <a href="#" className="hover:text-orange-500 py-2">
+              <a href="/services" className="hover:text-orange-500 py-2">
                 Services
               </a>
-              <a href="#" className="hover:text-orange-500 py-2">
+              <a href="/blog" className="hover:text-orange-500 py-2">
                 Blog
               </a>
-              <a href="#" className="hover:text-orange-500 py-2">
+              <a href="/careers" className="hover:text-orange-500 py-2">
                 Careers
               </a>
-              <a href="#" className="hover:text-orange-500 py-2">
+              <a href="/contact" className="hover:text-orange-500 py-2">
                 Contact
               </a>
               <a

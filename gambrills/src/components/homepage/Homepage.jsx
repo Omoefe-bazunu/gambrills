@@ -10,7 +10,7 @@ import LatestBlogUpdates from "../latest-blogs/Latest-blogs";
 
 function Homepage() {
   return (
-    <div className="font-primary text-white pt-6 bg-primary-blue h-screen font-white font-bold text-5xl">
+    <div className="font-primary text-white pt-6 bg-primary-blue font-white font-bold text-5xl">
       <HeroSection />
       <ServicesSection />
       <Casestories />
